@@ -1,10 +1,10 @@
 
 pic       = new Image();
-pic.src    = 'img/1.png';
+pic.src    = 'images/first-trooper.png';
 pic2       = new Image();
-pic2.src    = 'img/3.png';
+pic2.src    = 'images/third-trooper.png';
 picPlatform = new Image();
-picPlatform.src = 'img/platform.png';
+picPlatform.src = 'images/platform.png';
 
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
