@@ -1,0 +1,82 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Star Wars</title>
+	<style>
+		* { padding: 0; margin: 0; }
+		canvas { background: rgba(205, 214, 219, 0.2); display: block; margin: 0 auto; border-radius: 10px;}
+	</style>
+	<link rel="shortcut icon" href="images/first-trooper.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+	<ul class="menu-main">
+		<li><a href="#main" class="current">Главная</a></li>
+		<li><a href="#rules">Правила</a></li>
+		<li><a href="#results">Очки</a></li>
+		<li><a href="#contacts">Контакты</a></li>
+	</ul>
+</header>
+<canvas id="myCanvas"  width="750" height="750"></canvas>
+<script src="app.js"></script>
+<div class="parallax"></div>
+<div class="info-container">
+	<div class="info">
+		<a name="main"></a>
+		<img class="logo" src="images/logo.png" width="200" height="200">
+		<h3>Обрати внимание!</h3>
+		<p><b><-</b>  движение влево!</p>
+		<p><b>-></b>  движение вправо!</p>
+		<h3>Суть:</h3>
+		<em>
+			Уничтожай штурмовиков и добирайся до
+			вейдеров (после уничтожения вейдеров - появляются штурмовики), и может быть спустя некоторое
+			время, проведенное в игре, ты обретешь смысл жизни.
+		</em>
+		<h3>Правила:</h3>
+		<p>Уничтожай головы и получай очки. Всё предельно просто!</p>
+	</div>
+</div>
+<div class="contacts-container">
+	<a name="results"></a>
+	<div class="content-container-two">
+		<img src="images/ok-trooper.png" style="width: 450px; height: 450px">
+	</div>
+	<div class="content-container">
+		<h3>Результат:</h3>
+		<table>
+			<tr><th>Игрок:</th><th>Очки:</th></tr>
+			<tr><td>qwerty</td><td>111</td></tr>
+			<tr><td>perty</td><td>100</td></tr>
+			<tr><td>123</td><td>78</td></tr>
+			<tr><td>mouse</td><td>65</td></tr>
+			<tr><td>zcxv</td><td>21</td></tr>
+		</table>
+	</div>
+</div>
+<div class="contacts-container-two">
+	<div class="content-container-two">
+		<img src="images/fck-trooper.png" style="height: 450px; width: 450px">
+	</div>
+	<a name="rules"></a>
+	<div class="content-container">
+		<h3>Правила так и не изменились!!!</h3>
+		<em>"Если честно, то ты поверг меня в шок... правила написаны рядом с игрой!".</em>
+		<p>Уничтожай головы и получай очки. Всё предельно просто!... И не задавай глупых вопросов!</p>
+	</div>
+</div>
+</body>
+<footer>
+	<a name="contacts"></a>
+	<div>
+	Контакт с изобретателем этого чуда: <em>vk.com/maxkavan</em>, <em>@maxkavan</em>, Моб.тел. - <em>80292845312</em>.
+		<p>Хотите сказать мне "Привет" ? - <em>Напишите!</em></p>
+		<p>Если вы дошли до этой строчки, то я очень удивлен!</p>
+		<p>Наша конторка работает без выходных!</p>
+	</div>
+</footer>
+</html>
+
+
