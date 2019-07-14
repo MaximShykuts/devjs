@@ -130,7 +130,7 @@ th, td {
 
 .parallax {
   /* The image used */
-  background-image: url("img/darth-black.jpg");
+  background-image: url("images/darth-black.jpg");
 
   top: 0;
   left: 0;
@@ -193,7 +193,7 @@ th, td {
 }
 
 .contacts-container-two {
-  background-image: url("img/darth-black.jpg");
+  background-image: url("images/darth-black.jpg");
   top: 0;
   left: 0;
   right: 0;
