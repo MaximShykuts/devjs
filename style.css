@@ -1,0 +1,243 @@
+canvas {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.menu-main {
+  list-style: none;
+  margin: 0 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: black;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #b3b1bc;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: "Comic Sans MS", sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .1s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #45e0fe;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #45e0fe;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+@media (max-width: 550px) {
+  .menu-main {padding-top: 0;}
+  .menu-main li {display: block;}
+  .menu-main li:after {content: none;}
+  .menu-main a {
+    padding: 25px 0 20px;
+    margin: 0 30px;
+  }
+}
+
+.bg-img {
+  top: 72px;
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.contacts-container{
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 3.5rem;
+  position: relative;
+  background-color: black;
+  color: #45e0fe;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  text-align: left;
+}
+
+.contacts-container .content-container-two {
+  float: left;
+  padding: 25px 25px;
+  left: 20px;
+}
+
+.contacts-container .content-container {
+  width: 60%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 25px 45px;
+}
+table {
+  font-family: "Comic Sans MS", sans-serif;
+  width: 900px;
+  height: 400px;
+  padding: 25px 25px;
+}
+
+tr {
+  color: white;
+  padding: 10px 10px;
+  border: 2px solid white;
+  text-align: center;
+}
+
+th {
+  background: rgba(205, 214, 219, 0.2);
+}
+
+th, td {
+  border-right: 2px solid white;
+}
+
+.contacts-container-two{
+  font-family: "Comic Sans MS", sans-serif;
+  position: relative;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  text-align: center;
+}
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url("img/darth-black.jpg");
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: -875px;
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-container {
+  position: absolute;
+  margin-top: -810px;
+  margin-left: 120px;
+  max-width: 300px;
+  width: 100%;
+  height: 720px;
+  text-align: center;
+  z-index: 3;
+}
+
+.info-container .info {
+  background: rgba(205, 214, 219, 0.2);
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 20px 20px;
+  z-index: 4;
+  border-radius: 10px;
+}
+
+.info-container .info h3 {
+  font-family: "Comic Sans MS", sans-serif;
+  color: #45e0fe;
+}
+
+.info-container .info p {
+  font-family: "Comic Sans MS", sans-serif;
+  color: white;
+}
+
+.info-container .info em {
+  color: white;
+}
+
+.info-container .info .logo {
+  position: relative;
+  margin-top: -120px;
+  padding: 0 10px;
+}
+
+.contacts-container-two {
+  background-image: url("img/darth-black.jpg");
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts-container-two .content-container {
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 2em;
+  width: 900px;
+  height: 450px;
+  text-align: right;
+  float: right;
+  padding: 25px 25px;
+}
+
+.contacts-container-two .content-container h3 {
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 3.5rem;
+  color: #45e0fe;
+  padding: 20px 20px;
+}
+
+.contacts-container-two .content-container-two {
+  float: right;
+  padding: 25px 40px;
+}
+
+footer {
+  font-family: Arial, sans-serif;
+  color: #777777;
+  width: 100%;
+  background-color: black;
+  height: 200px;
+  text-align: center;
+}
+
+footer div {
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
